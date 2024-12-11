@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentNotifActivity"
+    android:background="@drawable/maintop">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="180dp"
+                        android:background="@drawable/checkwhite"
+                        android:orientation="vertical"
+                        android:paddingBottom="33dp"
+                        tools:ignore="ExtraText"></LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="150dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-black"
+                            android:text="Pembayaran\nBerhasil"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="40dp"></TextView>
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="center"
+                            android:text="Silahkan kembali ke halaman utama"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"></TextView>
+
+                    </LinearLayout>
+
+                <LinearLayout
+                        android:id="@+id/selanjutnya"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/cr20bffffff"
+                        android:clickable="true"
+                        android:elevation="10dp"
+                        android:focusable="true"
+                        android:gravity="center_horizontal"
+                        android:minHeight="32dp"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="50dp"
+                        android:paddingVertical="15dp"
+                        tools:ignore="TouchTargetSizeCheck">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Back Home"
+                            android:textColor="#2F572E"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+                </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

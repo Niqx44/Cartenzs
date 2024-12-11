@@ -13,13 +13,12 @@
         android:clipChildren="false"
         android:clipToPadding="false"
         android:orientation="vertical"
-        android:paddingTop="80dp">
+        android:layout_marginTop="80dp">
 
         <ScrollView
             android:id="@+id/rw04hkhhdpc"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:layout_height="match_parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
