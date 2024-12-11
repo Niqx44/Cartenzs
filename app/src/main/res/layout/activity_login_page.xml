@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:id="@+id/login"
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/login"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/green_background">
+    android:background="@color/green_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
         android:orientation="vertical"
@@ -53,7 +53,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="48dp"
-                        android:layout_marginBottom="10dp"
                         android:text="Email"
                         android:textColor="#2F572E"
                         android:textSize="14sp" />
@@ -61,21 +60,25 @@
                     <LinearLayout
                         android:id="@+id/r55ca7hz3j6s"
                         android:layout_width="match_parent"
-                        android:layout_height="39dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginHorizontal="46dp"
                         android:layout_marginBottom="11dp"
                         android:background="@null"
                         android:orientation="vertical">
 
-                        <EditText
-                            android:id="@+id/emaillogin"
+                        <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="e.g user@gmail,com"
-                            android:inputType="text"
-                            android:minHeight="48dp"
-                            android:textColorHint="#757575"
-                            tools:ignore="TouchTargetSizeCheck"></EditText>
+                            android:hint="e.g myemail@gmail.com"
+                            android:textColorHint="#757575">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/emaillogin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                android:minHeight="48dp" />
+                        </com.google.android.material.textfield.TextInputLayout>
                     </LinearLayout>
 
                     <TextView
@@ -83,7 +86,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="48dp"
-                        android:layout_marginBottom="10dp"
                         android:text="Kata sandi"
                         android:textColor="#30572E"
                         android:textSize="14sp" />
@@ -91,22 +93,26 @@
                     <LinearLayout
                         android:id="@+id/rjeq8ammdkia"
                         android:layout_width="match_parent"
-                        android:layout_height="39dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginHorizontal="46dp"
                         android:layout_marginBottom="12dp"
                         android:background="@null"
                         android:orientation="vertical">
 
-                        <EditText
-                            android:id="@+id/passwordlogin"
+                        <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:drawableEnd="@drawable/baseline_remove_red_eye_24"
+                            android:layout_height="wrap_content"
+                            app:passwordToggleEnabled="true"
                             android:hint="e.g pasword123"
-                            android:inputType="text"
-                            android:minHeight="48dp"
-                            android:textColorHint="#757575"
-                            tools:ignore="TouchTargetSizeCheck"></EditText>
+                            android:textColorHint="#757575">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/passwordlogin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textPassword"
+                                android:minHeight="48dp" />
+                        </com.google.android.material.textfield.TextInputLayout>
                     </LinearLayout>
 
                     <TextView
