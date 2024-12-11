@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TicketFragment"
+    android:background="@drawable/maintop">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pesan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="42dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Pesan Tiket"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/destinasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="42dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Tentukan destinasimu dan pesan tiketnya sekarang juga"
+                    android:textColor="#FFFFFF"
+                    android:textSize="11sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1100dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="150dp">
+
+                    <GridLayout
+                        android:id="@+id/mainGrid"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="8"
+                        android:alignmentMode="alignMargins"
+                        android:columnCount="1"
+                        android:columnOrderPreserved="false"
+                        android:padding="15dp"
+                        android:rowCount="3">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="16dp"
+                            app:cardBackgroundColor="#96D95C"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="8dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_horizontal|center_vertical"
+
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:id="@+id/relativ1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:clipChildren="false"
+                                    android:clipToPadding="false">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:clipChildren="false"
+                                        android:clipToPadding="false"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:id="@+id/gambargunung1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/gunung" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/box111"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:layout_alignParentBottom="true"
+                                        android:background="@color/white"
+                                        android:orientation="horizontal"
+                                        android:paddingHorizontal="8dp">
+
+                                        <LinearLayout
+                                            android:layout_width="170dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="10dp"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/box1"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="5dp"
+                                                android:layout_marginBottom="2dp"
+                                                android:fontFamily="sans-serif-medium"
+                                                android:text="Gunung Bawakaraeng"
+                                                android:textColor="@color/black"
+                                                android:textSize="16sp" />
+
+                                            <TextView
+                                                android:id="@+id/box11"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="sans-serif-medium"
+                                                android:text="Kabupaten Sinjai, Sulawesi Selatan | 7km"
+                                                android:textColor="@color/black"
+                                                android:textSize="8sp" />
+                                        </LinearLayout>
+
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:layout_weight="1" />
+
+                                        <LinearLayout
+                                            android:layout_width="80dp"
+                                            android:layout_height="40dp"
+                                            android:layout_gravity="center"
+                                            android:orientation="vertical">
+
+                                            <LinearLayout
+                                                android:layout_width="60dp"
+                                                android:layout_height="20dp"
+                                                android:layout_gravity="center"
+                                                android:background="@drawable/roundticket"
+                                                android:orientation="horizontal">
+
+                                                <ImageView
+                                                    android:layout_width="15dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_marginStart="7dp"
+                                                    android:src="@drawable/userwhite"></ImageView>
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="match_parent"
+                                                    android:fontFamily="sans-serif-medium"
+                                                    android:gravity="center"
+                                                    android:text="89/312"
+                                                    android:textColor="@color/white"
+                                                    android:textSize="9dp"
+                                                    tools:ignore="TextSizeCheck"></TextView>
+                                            </LinearLayout>
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:fontFamily="sans-serif-medium"
+                                                android:gravity="center"
+                                                android:text="Rp.15.000/org"
+                                                android:textSize="11dp"
+                                                tools:ignore="TextSizeCheck"></TextView>
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="16dp"
+                            app:cardBackgroundColor="#95D75B"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="8dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_horizontal|center_vertical"
+
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:id="@+id/relative2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:clipChildren="false"
+                                    android:clipToPadding="false">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:clipChildren="false"
+                                        android:clipToPadding="false"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:id="@+id/gambargunung2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/gunung" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/box222"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:layout_alignParentBottom="true"
+                                        android:background="@color/white"
+                                        android:orientation="horizontal"
+                                        android:paddingHorizontal="8dp">
+
+                                        <LinearLayout
+                                            android:layout_width="170dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="10dp"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/box2"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="5dp"
+                                                android:layout_marginBottom="2dp"
+                                                android:fontFamily="sans-serif-medium"
+                                                android:text="Gunung Bawakaraeng"
+                                                android:textColor="@color/black"
+                                                android:textSize="16sp" />
+
+                                            <TextView
+                                                android:id="@+id/box22"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="sans-serif-medium"
+                                                android:text="Kabupaten Sinjai, Sulawesi Selatan | 7km"
+                                                android:textColor="@color/black"
+                                                android:textSize="8sp" />
+                                        </LinearLayout>
+
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:layout_weight="1" />
+
+                                        <LinearLayout
+                                            android:layout_width="80dp"
+                                            android:layout_height="40dp"
+                                            android:layout_gravity="center"
+                                            android:orientation="vertical">
+
+                                            <LinearLayout
+                                                android:layout_width="60dp"
+                                                android:layout_height="20dp"
+                                                android:layout_gravity="center"
+                                                android:background="@drawable/roundticket"
+                                                android:orientation="horizontal">
+
+                                                <ImageView
+                                                    android:layout_width="15dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_marginStart="7dp"
+                                                    android:src="@drawable/userwhite"></ImageView>
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="match_parent"
+                                                    android:fontFamily="sans-serif-medium"
+                                                    android:gravity="center"
+                                                    android:text="89/312"
+                                                    android:textColor="@color/white"
+                                                    android:textSize="9dp"
+                                                    tools:ignore="TextSizeCheck"></TextView>
+                                            </LinearLayout>
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:fontFamily="sans-serif-medium"
+                                                android:gravity="center"
+                                                android:text="Rp.15.000/org"
+                                                android:textSize="11dp"
+                                                tools:ignore="TextSizeCheck"></TextView>
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="16dp"
+                            app:cardBackgroundColor="#96D95C"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="8dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_horizontal|center_vertical"
+
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:id="@+id/relative3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:clipChildren="false"
+                                    android:clipToPadding="false">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:clipChildren="false"
+                                        android:clipToPadding="false"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:id="@+id/gambargunung3"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/gunung" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/box333"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:layout_alignParentBottom="true"
+                                        android:background="@color/white"
+                                        android:orientation="horizontal"
+                                        android:paddingHorizontal="8dp">
+
+                                        <LinearLayout
+                                            android:layout_width="170dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="10dp"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/box3"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="5dp"
+                                                android:layout_marginBottom="2dp"
+                                                android:fontFamily="sans-serif-medium"
+                                                android:text="Gunung Bawakaraeng"
+                                                android:textColor="@color/black"
+                                                android:textSize="16sp" />
+
+                                            <TextView
+                                                android:id="@+id/box33"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="sans-serif-medium"
+                                                android:text="Kabupaten Sinjai, Sulawesi Selatan | 7km"
+                                                android:textColor="@color/black"
+                                                android:textSize="8sp" />
+                                        </LinearLayout>
+
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:layout_weight="1" />
+
+                                        <LinearLayout
+                                            android:layout_width="80dp"
+                                            android:layout_height="40dp"
+                                            android:layout_gravity="center"
+                                            android:orientation="vertical">
+
+                                            <LinearLayout
+                                                android:layout_width="60dp"
+                                                android:layout_height="20dp"
+                                                android:layout_gravity="center"
+                                                android:background="@drawable/roundticket"
+                                                android:orientation="horizontal">
+
+                                                <ImageView
+                                                    android:layout_width="15dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_marginStart="7dp"
+                                                    android:src="@drawable/userwhite"></ImageView>
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="match_parent"
+                                                    android:fontFamily="sans-serif-medium"
+                                                    android:gravity="center"
+                                                    android:text="89/312"
+                                                    android:textColor="@color/white"
+                                                    android:textSize="9dp"
+                                                    tools:ignore="TextSizeCheck"></TextView>
+                                            </LinearLayout>
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:fontFamily="sans-serif-medium"
+                                                android:gravity="center"
+                                                android:text="Rp.15.000/org"
+                                                android:textSize="11dp"
+                                                tools:ignore="TextSizeCheck"></TextView>
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="16dp"
+                            app:cardBackgroundColor="#96D95C"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="8dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_horizontal|center_vertical"
+
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:id="@+id/ro3k8jx1bl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:clipChildren="false"
+                                    android:clipToPadding="false">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:clipChildren="false"
+                                        android:clipToPadding="false"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:id="@+id/gambargunung4"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/gunung" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/rde9qjdgu0e4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:layout_alignParentBottom="true"
+                                        android:background="@color/white"
+                                        android:orientation="horizontal"
+                                        android:paddingHorizontal="8dp">
+
+                                        <LinearLayout
+                                            android:layout_width="170dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="10dp"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/box4"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="5dp"
+                                                android:layout_marginBottom="2dp"
+                                                android:fontFamily="sans-serif-medium"
+                                                android:text="Gunung Bawakaraeng"
+                                                android:textColor="@color/black"
+                                                android:textSize="16sp" />
+
+                                            <TextView
+                                                android:id="@+id/box44"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="sans-serif-medium"
+                                                android:text="Kabupaten Sinjai, Sulawesi Selatan | 7km"
+                                                android:textColor="@color/black"
+                                                android:textSize="8sp" />
+                                        </LinearLayout>
+
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:layout_weight="1" />
+
+                                        <LinearLayout
+                                            android:layout_width="80dp"
+                                            android:layout_height="40dp"
+                                            android:layout_gravity="center"
+                                            android:orientation="vertical">
+
+                                            <LinearLayout
+                                                android:layout_width="60dp"
+                                                android:layout_height="20dp"
+                                                android:layout_gravity="center"
+                                                android:background="@drawable/roundticket"
+                                                android:orientation="horizontal">
+
+                                                <ImageView
+                                                    android:layout_width="15dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_marginStart="7dp"
+                                                    android:src="@drawable/userwhite"></ImageView>
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="match_parent"
+                                                    android:fontFamily="sans-serif-medium"
+                                                    android:gravity="center"
+                                                    android:text="89/312"
+                                                    android:textColor="@color/white"
+                                                    android:textSize="9dp"
+                                                    tools:ignore="TextSizeCheck"></TextView>
+                                            </LinearLayout>
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:fontFamily="sans-serif-medium"
+                                                android:gravity="center"
+                                                android:text="Rp.15.000/org"
+                                                android:textSize="11dp"
+                                                tools:ignore="TextSizeCheck"></TextView>
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="16dp"
+                            app:cardBackgroundColor="#95D75B"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="8dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_horizontal|center_vertical"
+
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:id="@+id/relative5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:clipChildren="false"
+                                    android:clipToPadding="false">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:clipChildren="false"
+                                        android:clipToPadding="false"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:id="@+id/gambargunung5"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/gunung" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/box555"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:layout_alignParentBottom="true"
+                                        android:background="@color/white"
+                                        android:orientation="horizontal"
+                                        android:paddingHorizontal="8dp">
+
+                                        <LinearLayout
+                                            android:layout_width="170dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="10dp"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/box5"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="5dp"
+                                                android:layout_marginBottom="2dp"
+                                                android:fontFamily="sans-serif-medium"
+                                                android:text="Gunung Bawakaraeng"
+                                                android:textColor="@color/black"
+                                                android:textSize="16sp" />
+
+                                            <TextView
+                                                android:id="@+id/box55"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:fontFamily="sans-serif-medium"
+                                                android:text="Kabupaten Sinjai, Sulawesi Selatan | 7km"
+                                                android:textColor="@color/black"
+                                                android:textSize="8sp" />
+                                        </LinearLayout>
+
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal"
+                                            android:layout_weight="1" />
+
+                                        <LinearLayout
+                                            android:layout_width="80dp"
+                                            android:layout_height="40dp"
+                                            android:layout_gravity="center"
+                                            android:orientation="vertical">
+
+                                            <LinearLayout
+                                                android:layout_width="60dp"
+                                                android:layout_height="20dp"
+                                                android:layout_gravity="center"
+                                                android:background="@drawable/roundticket"
+                                                android:orientation="horizontal">
+
+                                                <ImageView
+                                                    android:layout_width="15dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_marginStart="7dp"
+                                                    android:src="@drawable/userwhite"></ImageView>
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="match_parent"
+                                                    android:fontFamily="sans-serif-medium"
+                                                    android:gravity="center"
+                                                    android:text="89/312"
+                                                    android:textColor="@color/white"
+                                                    android:textSize="9dp"
+                                                    tools:ignore="TextSizeCheck"></TextView>
+                                            </LinearLayout>
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:fontFamily="sans-serif-medium"
+                                                android:gravity="center"
+                                                android:text="Rp.15.000/org"
+                                                android:textSize="11dp"
+                                                tools:ignore="TextSizeCheck"></TextView>
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </GridLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

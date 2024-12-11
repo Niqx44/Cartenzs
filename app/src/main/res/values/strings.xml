@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Cartenzs</string>
+    <string name="hello_text">Hello!</string>
+    <string name="username_hint">Nama pengguna</string>
+    <string name="password_hint">Kata sandi</string>
+    <string name="forgot_password">Lupa sandi?</string>
+    <string name="login_button">Masuk</string>
+    <string name="google_login">Masuk dengan Google</string>
+    <string name="facebook_login">Masuk dengan Facebook</string>
+    <string name="signup_prompt">Belum punya akun? Daftar disini</string>
+    <string name="nama_pengguna">Nama pengguna</string>
+    <string name="kata_sandi">Kata sandi</string>
+    <string name="lupa_sandi">Lupa sandi?</string>
+    <string name="masuk">Masuk</string>
+    <string name="masuk_dengan_cara_lain">Masuk dengan cara lain</string>
+    <string name="todo">TODO</string>
+    <string name="masuk_dengan_google">Masuk dengan google</string>
+    <string name="masuk_dengan_facebook">Masuk dengan Facebook</string>
+    <string name="belum_punya_akun_daftar_disini">Belum punya akun? Daftar disini</string>
+    <string name="hello">Hello!</string>
+    <string name="selamat_datang">Selamat Datang</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="muhfarhanrizki">\@muhfarhanrizki</string>
+</resources>
