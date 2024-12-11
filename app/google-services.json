@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "716061665620",
+    "project_id": "cartenzs-99fe1",
+    "storage_bucket": "cartenzs-99fe1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:716061665620:android:6be062317407885bc4c0c1",
+        "android_client_info": {
+          "package_name": "com.example.cartenzs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "716061665620-8sg7a34hfffupjvdo80ta2ql92nprbjc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cartenzs",
+            "certificate_hash": "1a17b46e89d03fea35a14b5b2582c3848a4de38b"
+          }
+        },
+        {
+          "client_id": "716061665620-qt3mvjhlme5c535f8morjmbpspd51pe9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGWQrTiC9lQlONx5cy6gzHv7DoD8SYmTA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "716061665620-ee7kfsu9ooj9raaq5rn4lpuraespihsq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

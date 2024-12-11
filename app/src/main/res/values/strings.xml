@@ -19,7 +19,8 @@
     <string name="belum_punya_akun_daftar_disini">Belum punya akun? Daftar disini</string>
     <string name="hello">Hello!</string>
     <string name="selamat_datang">Selamat Datang</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="muhfarhanrizki">\@muhfarhanrizki</string>
+    <string name="default_web_client_id">716061665620-8sg7a34hfffupjvdo80ta2ql92nprbjc.apps.googleusercontent.com</string>
+
 </resources>

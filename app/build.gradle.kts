@@ -1,6 +1,7 @@
 plugins {
-    alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
+    id("com.android.application")
+    id("com.google.gms.google-services")
+    kotlin("android") version "1.9.0"
 }
 
 android {
@@ -42,9 +43,18 @@ android {
 }
 
 dependencies {
+    implementation("androidx.vectordrawable:vectordrawable:1.1.0")
+    implementation("androidx.vectordrawable:vectordrawable-animated:1.1.0")
+    implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("androidx.gridlayout:gridlayout:1.0.0")
     implementation("com.github.bumptech.glide:glide:4.15.1")
-    annotationProcessor("com.github.bumptech.glide:compiler:4.15.1")
+    implementation(platform(libs.firebase.bom))
+    implementation("com.google.firebase:firebase-analytics")
+    implementation("com.google.firebase:firebase-auth:23.1.0")
+    implementation("com.android.support:appcompat-v7:28.0.0")
+    implementation("com.google.android.gms:play-services-auth:21.3.0")
+    implementation(libs.firebase.auth)
+    annotationProcessor(libs.glideCompiler)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

@@ -54,7 +54,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="48dp"
                         android:layout_marginBottom="10dp"
-                        android:text="@string/nama_pengguna"
+                        android:text="Email"
                         android:textColor="#2F572E"
                         android:textSize="14sp" />
 
@@ -68,9 +68,10 @@
                         android:orientation="vertical">
 
                         <EditText
+                            android:id="@+id/emaillogin"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="e.g namasaya"
+                            android:hint="e.g user@gmail,com"
                             android:inputType="text"
                             android:minHeight="48dp"
                             android:textColorHint="#757575"
@@ -97,6 +98,7 @@
                         android:orientation="vertical">
 
                         <EditText
+                            android:id="@+id/passwordlogin"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:drawableEnd="@drawable/baseline_remove_red_eye_24"
