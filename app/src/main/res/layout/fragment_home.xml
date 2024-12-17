@@ -244,7 +244,7 @@
                             android:layout_marginLeft="16dp"
                             android:layout_marginRight="16dp"
                             android:layout_marginBottom="16dp"
-                            app:cardBackgroundColor="#96D95C"
+                            app:cardBackgroundColor="#67BD64"
                             app:cardCornerRadius="8dp"
                             app:cardElevation="8dp">
 
@@ -282,11 +282,12 @@
                             android:layout_marginLeft="16dp"
                             android:layout_marginRight="16dp"
                             android:layout_marginBottom="16dp"
-                            app:cardBackgroundColor="#95D75B"
+                            app:cardBackgroundColor="#67BD64"
                             app:cardCornerRadius="8dp"
                             app:cardElevation="8dp">
 
                             <LinearLayout
+                                android:id="@+id/rentalalat"
                                 android:layout_width="132dp"
                                 android:layout_height="134dp"
                                 android:layout_gravity="center_horizontal|center_vertical"
@@ -321,7 +322,7 @@
                             android:layout_marginLeft="16dp"
                             android:layout_marginRight="16dp"
                             android:layout_marginBottom="16dp"
-                            app:cardBackgroundColor="#96D95C"
+                            app:cardBackgroundColor="#67BD64"
                             app:cardCornerRadius="8dp"
                             app:cardElevation="8dp">
 
@@ -360,7 +361,7 @@
                             android:layout_marginLeft="16dp"
                             android:layout_marginRight="16dp"
                             android:layout_marginBottom="16dp"
-                            app:cardBackgroundColor="#96D95C"
+                            app:cardBackgroundColor="#67BD64"
                             app:cardCornerRadius="8dp"
                             app:cardElevation="8dp">
 
